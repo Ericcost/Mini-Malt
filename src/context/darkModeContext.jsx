@@ -16,8 +16,8 @@ export const DarkModeContextProvider = ({ children }) => {
   }, [darkMode])
 
   return (
-    <DarkModeContextProvider value={{darkMode, toggleDarkMode }}>
+    <DarkModeContext.Provider value={{darkMode, toggleDarkMode }}>
       {children}
-    </DarkModeContextProvider>
+    </DarkModeContext.Provider>
   )
 };
