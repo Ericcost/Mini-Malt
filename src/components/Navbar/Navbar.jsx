@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
 //icons
 import { AiTwotoneHome } from "react-icons/ai";
@@ -8,6 +9,9 @@ import { BsPersonFill } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { TbBell } from "react-icons/tb";
 import "./navbar.scss";
+
+//context
+import { DarkModeContext } from '../../context/darkModeContext';
 
 function Navbar() {
   return (

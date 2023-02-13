@@ -20,7 +20,7 @@ function App() {
 
   function Layout() {
     return (
-      <div className={"theme-light"}>
+      <div>
         <Navbar />
         <div style={{ display: "flex" }}>
           <Leftbar />
