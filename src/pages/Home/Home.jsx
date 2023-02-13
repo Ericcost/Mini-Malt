@@ -1,53 +1,27 @@
+import { Observer } from "mobx-react";
+import { NewPostForm } from "../../components/NewPostForm/NewPostForm";
+import { usePostsStore } from "../../context/postContext";
 import "./Home.scss";
 
 function Home() {
+  const postsStore = usePostsStore();
+
   return (
-    <div className="home">
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-    </div>
+    <Observer>
+      {() => 
+        <div className="home">
+          <div className="posts">
+            {postsStore.posts.map(post => (
+              <div key={post.id}>
+                {post.text}
+              </div>
+            ))}
+          </div>
+          <NewPostForm />
+        </div>
+      }
+    </Observer>
+    
   )
 }
 
