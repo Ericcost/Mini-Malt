@@ -5,7 +5,10 @@ export function createPostsStore() {
     posts: [],
     addPost(text){
       this.posts.push({
-        text, id: nanoid()
+        text, 
+        id: nanoid(),
+        name: 'John Doe',
+        img: 'src/assets/sky.png'
       })
     },
 
