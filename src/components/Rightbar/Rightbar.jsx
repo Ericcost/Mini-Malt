@@ -8,7 +8,7 @@ function Rightbar() {
           <span>Suggestion for you</span>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <span>John Doe</span>
             </div>
           
@@ -19,7 +19,7 @@ function Rightbar() {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <span>John Doe</span>
             </div>
           
@@ -33,7 +33,7 @@ function Rightbar() {
           <span>Latest Activities</span>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <p>
                 <span>John Doe</span> changed their cover
               </p>
@@ -45,35 +45,35 @@ function Rightbar() {
           <span>Online Friends</span>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <div className="online" />
               <span>John Doe</span> 
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <div className="online" />
               <span>John Doe</span> 
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <div className="online" />
               <span>John Doe</span> 
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <div className="online" />
               <span>John Doe</span> 
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="src/assets/mars.png" alt="photo de profil de John Doe"/>
+              <img src="/src/assets/atr.png" alt="photo de profil de John Doe"/>
               <div className="online" />
               <span>John Doe</span> 
             </div>
