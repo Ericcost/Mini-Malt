@@ -4,12 +4,16 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(
-    JSON.parse(localStorage.getItem('user')) || false
+    JSON.parse(localStorage.getItem('user')) || null
   );
   
   const login = () => {
     // TO DO
-    setCurrentUser({ id:1, name: 'John Doe', profile_picture: 'src/assets/atr.png'});
+    setCurrentUser({ 
+      id:1,
+      name: 'R Kenee',
+      profilePic: 'src/assets/mars.png',
+      });
   };
 
   useEffect(() => { 
@@ -17,8 +21,8 @@ export const AuthContextProvider = ({ children }) => {
   }, [currentUser])
 
   return (
-    <AuthContextProvider value={{ currentUser, login }}>
+    <AuthContext.Provider value={{ currentUser, login }}>
       {children}
-    </AuthContextProvider>
+    </AuthContext.Provider>
   )
 };
