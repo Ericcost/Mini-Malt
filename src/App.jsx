@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route, Outlet, Navigate } from "react-router-dom";
 
 //pages
@@ -15,12 +15,16 @@ import Rightbar from "./components/Rightbar/Rightbar";
 //SCSS
 import "./styles/style.scss";
 
+//context 
+import { AuthContext } from "./context/authContext";
+import { DarkModeContext } from "./context/darkModeContext";
+
 function App() {
-  const currentUser = true;
+  const { currentUser } = useContext(AuthContext)
 
   function Layout() {
     return (
-      <div>
+      <div className="theme-light">
         <Navbar />
         <div style={{ display: "flex" }}>
           <Leftbar />
