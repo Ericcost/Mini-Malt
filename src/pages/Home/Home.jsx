@@ -1,7 +1,9 @@
 import { Observer } from "mobx-react";
 import { NewPostForm } from "../../components/NewPostForm/NewPostForm";
+import Post from "../../components/Post/Post";
+import Stories from "../../components/Stories/Stories";
 import { usePostsStore } from "../../context/postContext";
-import "./Home.scss";
+import "./home.scss";
 
 function Home() {
   const postsStore = usePostsStore();
@@ -10,13 +12,12 @@ function Home() {
     <Observer>
       {() => 
         <div className="home">
-          <div className="posts">
+          <Stories />
             {postsStore.posts.map(post => (
-              <div key={post.id}>
-                {post.text}
+              <div key={post.id}  className="posts">
+                <Post post={post}/>
               </div>
             ))}
-          </div>
           <NewPostForm />
         </div>
       }
