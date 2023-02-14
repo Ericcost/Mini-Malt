@@ -1,7 +1,6 @@
 import "./comments.scss";
 
-function Comments() {
-
+const Comments = () => {
   //Temporary
   const comments = [
     {
